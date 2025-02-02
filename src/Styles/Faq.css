@@ -1,0 +1,22 @@
+.Faq-bg{
+  color: white;
+  height: 50vh;
+  width: 100%;
+  background-image: url("D:\React_Projects\RapidCar Repairs\src\ImagesFolder\Automatic_Gears.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: middle;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.faq-container{
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.faq-container .row{
+  border-bottom: 1px solid black;
+}

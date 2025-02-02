@@ -1,0 +1,77 @@
+.Booking-bg {
+  background-image: Url("C:\Users\mahender pratap\Downloads\Merceses-silverBlue.png");
+  background-position: bottom;
+  /* background-size: cover; */
+}
+
+.Booking-form {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(to left, #e2e2e2, #ffffff);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.Booking-form h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 550;
+}
+
+.Booking-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.Booking-form input,
+.Booking-form select,
+.Booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Booking-form input:focus,
+.Booking-form select:focus,
+.Booking-form textarea:focus {
+  border-color: red;
+  box-shadow: 0 0 8px rgb(255, 0, 0);
+  outline: none;
+}
+
+.Booking-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Booking-form button:hover {
+  background-color: #f01027;
+  transform: translateY(-2px);
+}
+
+.Booking-form button:active {
+  background-color: #da1b2e;
+  transform: translateY(0);
+}
+
+.Booking-form textarea {
+  resize: vertical;
+}

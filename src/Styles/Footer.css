@@ -1,0 +1,121 @@
+#weserve {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.brand-bar {
+  background-color: #1a1a1a;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.logos-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.logos-grid {
+  display: flex;
+  animation: scroll 20s linear infinite; 
+}
+
+.brand-logo {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.brand-logo img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Initial position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway to cover the first set of logos */
+  }
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  padding: 40px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("D:/React_Projects/RapidCar Repairs/src/ImagesFolder/BMW-Red.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-bottom: 2px solid red;
+  padding-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  color: #d1d1d1;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: red;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: red;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid red;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.875rem;
+  color: #d1d1d1;
+}

@@ -1,0 +1,160 @@
+.welcome-content {
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.welcome-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.welcome-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #18416d;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.Home-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: backgroundChange 10s infinite;
+}
+
+.welcome-text {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.mySwiper {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  z-index: 3;
+}
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  color: #fff;
+}
+
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-next:hover {
+  color: red;
+}
+
+.slide-content {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+div h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight:bolder;
+  margin-bottom: 40px;
+}
+
+.Services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.Services-container h1 {
+  font-size: 5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .slide-content {
+    font-size: 1rem;
+  }
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url("../ImagesFolder/Citron-Car.jpg");
+  }
+  33% {
+    background-image: url("../ImagesFolder/Home_Bg1.jpg");
+  }
+  66% {
+    background-image: url("../ImagesFolder/Home_Bg2.jpg");
+  }
+  100% {
+    background-image: url("../ImagesFolder/Citron-Car.jpg");
+  }
+}

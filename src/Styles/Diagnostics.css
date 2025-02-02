@@ -1,0 +1,155 @@
+.service-page {
+    color: white;
+    height: 55vh;
+    width: 100%;
+    background-image: url("D:\React_Projects\RapidCar Repairs\src\ImagesFolder\Car-grey-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
+  }
+  
+  .service-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .service-page h1 {
+    font-size: 5rem;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+  }
+  
+  .service-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .left {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left h1 {
+    font-size: 4rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+.gallery {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+}
+
+.gallery-item {
+  position: relative;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item::before {
+  content: "View Image";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bold
+}
+  /* Additional responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .service-page h1 {
+      font-size: 2.5rem;
+    }
+  
+    .service-content {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .right img {
+      max-width: 90%;
+      margin-top: 20px;
+    }
+  }
+  

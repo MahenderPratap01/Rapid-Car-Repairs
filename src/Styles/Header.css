@@ -1,0 +1,97 @@
+#Brandlogo {
+  width: 100px;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: white;
+  gap: rem;
+}
+
+#login-btn {
+  background-color: white;
+  color: Red;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#login-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+#signup-btn {
+  background-color: white;
+  color: Red;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#signup-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+#logout-btn{
+  background-color: white;
+  color: red;
+  border: 1px solid black;
+}
+
+#logout-btn:hover{
+  background-color: rgba(32, 31, 31, 0.929);
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    padding: 0.5rem 0;
+  }
+}
